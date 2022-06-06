@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate | Houses</title>
+
+    <!-- bootsrap css link goes here -->
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+
+    <!-- owl carousel stylesheet link -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="./assets/css/all.css">
+
+    <!-- main css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+   <!-- main content begins here -->
+
+   <!-- header begins -->
+   <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Real Estate</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+  </header>
+  <!-- header ends here -->
+
+
+  <!-- main body begins here -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- sidebar begins -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">
+                <span data-feather="home"></span>
+                <span class="icon"><i class="fa-solid fa-gauge" aria-hidden="true"></i></span>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./houses.html">
+                <span data-feather="file"></span>
+                <span class="icon"><i class="fa-solid fa-shop" aria-hidden="true"></i></span>
+                Houses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./users.html">
+                <span data-feather="shopping-cart"></span>
+                <span class="icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                Users
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./purchases.html">
+                <span data-feather="users"></span>
+                <span class="icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+                Purchases
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                <span class="icon"><i class="fa-solid fa-building" aria-hidden="true"></i></span>
+                Rentals
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="layers"></span>
+                <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                Messages
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                Help
+              </a>
+            </li>
+          </ul>
+  
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Profile</span>
+            <a class="link-secondary" href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle"></span>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Password
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Settings
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Social engagement
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Year-end sale
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Sidebar ends here -->
+      
+      <!-- main center content begins here -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="main-recont">
+            <!-- houses container here -->
+            <div class="container-fluid m-content py-2 px-1 modo-recont">
+              <!-- Button trigger modal -->
+                <button type="button" class="btn but-red" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span class="ad-icon"><i class="fa-solid fa-plus"></i></span> New Rentals
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <form action="#" method="post">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <!-- heading -->
+                        <div class="modal-header mod-heady text-white">
+                        <span class="h5 modal-title text-center w-100 modo-title" id="exampleModalLabel">New Rental</span>
+                        <button type="button" class="btn-ex" data-bs-dismiss="modal">
+                          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                   
+                    <div class="modal-body mody p-5">
+
+                       <!-- Select User -->
+                      <div class="form-floating mb-3">
+                        <label for="type" class="form-label"></label>
+                        <select id="type" class="form-select" required>
+                          <option selected>Select User</option>
+                          <option>Customer 1</option>
+                          <option>Customer 2</option>
+                        </select>
+                      </div>
+                      
+                      <!-- Select House -->
+                      <div class="form-floating mb-3">
+                        <label for="type" class="form-label"></label>
+                        <select id="type" class="form-select" required>
+                          <option selected>House</option>
+                          <option>House 1</option>
+                          <option>House 2</option>
+                        </select>
+                      </div>
+                
+                      <!-- Purchase Type and total amount -->
+                      <div class="row">
+                        <!-- Purchase type -->
+                        <div class="form-floating mb-3 col-6">
+                          <label for="type" class="form-label"></label>
+                          <select id="type" class="form-select" required>
+                            <option selected>Purchase Type</option>
+                            <option>One Time</option>
+                            <option>Hire Purchase</option>
+                          </select>
+                        </div>
+                        <!-- Total amount -->
+                        <div class="form-floating mb-3 col-6">
+                          <input type="text" class="form-control" id="floatingPassword" placeholder="Location" required>
+                          <label for="floatingPassword">Total Amount</label>
+                        </div>
+                      </div>
+
+                       <!-- Purchase Type and total amount -->
+                       <div class="row">
+                        <!-- Deposit -->
+                        <div class="form-floating mb-3 col-6">
+                          <input type="text" class="form-control" id="floatingPassword" placeholder="Location" required>
+                          <label for="floatingPassword">Deposit</label>
+                        </div>
+                        <!-- Duration -->
+                        <div class="form-floating mb-3 col-6">
+                          <input type="text" class="form-control" id="floatingPassword" placeholder="Location" required>
+                          <label for="floatingPassword">Duration</label>
+                        </div>
+                      </div>
+                
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Location" required>
+                        <label for="floatingPassword">Monthly Installments</label>
+                      </div>
+                
+                
+                      <div class="text-center">
+                        <button class="md-btn btn-primary mt-0 mb-3 msave-btn" type="submit">Save</button>
+                        <button type="button" class="btn btn-danger md-btn mcanc-btn" data-bs-dismiss="modal">Cancel</button>
+                     </div>
+                      </div>
+                  
+                      <!-- <div class="checkbox mb-3">
+                        <label>
+                          <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                      </div> -->
+                       
+                   
+                    </div>
+                    <!-- <div class="modal-footer d-flex justify-content-center">
+                      <button type="submit" class="btn mod-btn md-btn">Add</button>
+                     
+                    </div> -->
+                  </form>
+                </div>
+            </div>
+        </div>
+        <!-- list of houses -->
+        <div class="lh-container container-fluid m-0 p-0">
+          <!-- heading -->
+          <div class="heady text-end">
+             <!-- search form -->
+             <form action="#" method="post">
+              <div class="col-12 mb-3 search-cont">
+                <label for="search"></label>
+                <input type="text" class="searchy" name="Search" placeholder="Search..." required>
+                <!-- <button type="submit" class="search-btn"><i class="fa-solid fa-search"></i></button> -->
+              </div>
+              
+             </form>
+          </div>
+
+          <!-- tabular representation of purchases begins here -->
+          <!-- table -->
+   <div class="table-responsive mt-5">
+    <table class="table table-hover table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">House</th>
+          <th scope="col">Client</th>
+          <th scope="col">Amount (Ksh)</th>
+          <th scope="col">Monthly Status</th>
+          <th scope="col">Progress</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>House 1</td>
+          <td>Client 1</td>
+          <td>130, 000</td>
+          <td>
+            <span class="m-status">Paid</span>
+          </td>
+          <td>Progress</td>
+          <td>
+            <a href="#" class="more me-1">More</a>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>House 1</td>
+          <td>Client 1</td>
+          <td>130, 000</td>
+          <td>
+            <span class="m-status">Paid</span>
+          </td>
+          <td>Progress</td>
+          <td>
+            <a href="#" class="more me-1">More</a>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>House 1</td>
+          <td>Client 1</td>
+          <td>130, 000</td>
+          <td>
+            <span class="m-status">Paid</span>
+          </td>
+          <td>Progress</td>
+          <td>
+            <a href="#" class="more me-1">More</a>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>House 1</td>
+          <td>Client 1</td>
+          <td>130, 000</td>
+          <td>
+            <span class="m-status">Paid</span>
+          </td>
+          <td>Progress</td>
+          <td>
+            <a href="#" class="more me-1">More</a>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>House 1</td>
+          <td>Client 1</td>
+          <td>130, 000</td>
+          <td>
+            <span class="m-status">Paid</span>
+          </td>
+          <td>Progress</td>
+          <td>
+            <a href="#" class="more me-1">More</a>
+          </td>
+        </tr>
+       
+      </tbody>
+    </table>
+</div>
+          <!-- tabular representation of purchases begins here -->
+      </div>
+      </main>
+      <!-- main centered content ends here -->
+    </div>
+  </div>
+  <!-- main body ends here -->
+   <!-- main content ends here -->
+
+
+    
+    <!-- jquery js link goes here -->
+    <script src="./assets/js/jquery.js"></script>
+
+    <!-- bootstrap js link goes here -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
+    <!-- <script src="./assets/js/bootstrap.bundle.js"></script> -->
+
+    <!-- owl carousel js link goes here -->
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+
+    <!-- fontawesome js link -->
+    <script src="./assets/js/all.js"></script>
+
+    <!-- isotope js link -->
+    <script src="./assets/js/isotope.js"></script>
+
+    <!-- main js link goes here -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
